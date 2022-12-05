@@ -8,7 +8,7 @@ def user_profile_upload(self, image) -> str:
 # Create your models here.
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='profile')
-    profile = models.FileField(upload_to=user_profile_upload)
+    profile = models.FileField(upload_to=user_profile_upload, null=True, blank=True)
     team_member = models.BooleanField(default=False)
     proffession = models.CharField(max_length=50)
     info = models.TextField(default='')
