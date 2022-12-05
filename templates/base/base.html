@@ -58,7 +58,7 @@
   <header id="header" class="d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="index.html">E-Retail</a></h1>
+      <h1 class="logo"><a href="/">E-Retail</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="{% static 'img/logo.png' %}" alt="" class="img-fluid"></a>-->
 
@@ -91,10 +91,10 @@
             <div class="footer-info">
               <h3>E-RETAIL</h3>
               <p>
-                A108 Adam Street <br>
-                NY 535022, USA<br><br>
+                Bayero University Kano <br>
+                Kano State, Nigeria<br><br>
                 <strong>Phone:</strong> +1 5589 55488 55<br>
-                <strong>Email:</strong> info@example.com<br>
+                <strong>Email:</strong> mminuwaali@gmail.com<br>
               </p>
               <div class="social-links mt-3">
                 <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
@@ -130,7 +130,7 @@
 
           <div class="col-lg-4 col-md-6 footer-newsletter">
             <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <p>Subscribe to our newsletter, we promise not to spam you.</p>
             <form action="{% url 'subscribe' %}" method="post">
               {% csrf_token %}
               <input type="email" name="email" /><input type="submit" value="Subscribe" />
