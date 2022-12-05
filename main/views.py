@@ -17,21 +17,6 @@ def home_view(request):
     return render(request, 'main/index.html',obj)
 
 
-# def about_view(request):
-#     obj = {}
-#     return render(request, 'main/about.html', obj)
-
-
-# def service_view(request):
-#     obj = {}
-#     return render(request, 'main/service.html', obj)
-
-
-# def team_view(request):
-#     obj = {}
-#     return render(request, 'main/team.html', obj)
-
-
 def portfolio_view(request, id):
     return render(request, 'main/portfolio.html', {'portfolio': get_object(Portfolio, id=id)})
 
